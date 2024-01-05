@@ -247,7 +247,8 @@ These are the fundamental operations for selecting data in SQL.
     <summary><b>Code</b></summary>
     
     ```sql
-
+    SELECT (COUNT(CITY) - COUNT(DISTINCT(CITY))) 
+    FROM STATION
     ```
    </details>
 </details>
