@@ -46,3 +46,24 @@ This query retrieves all columns from the `employees` table where the `departmen
 These are the fundamental operations for selecting data in SQL.
 
 ##   Practice Questions
+
+<details>
+<summary><b>Revising the Select Query I</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+    The CITY table is described as follows: 
+
+   <img src="./assets/Revising_the_Select_Query-I.jpg" alt="CITY Table" style="height:100%; width:60%">
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
