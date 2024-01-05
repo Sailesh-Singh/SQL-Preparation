@@ -1,0 +1,53 @@
+# VSCode folders
+.vscode/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compiled binary files
+bin/
+obj/
+
+# Visual Studio Code auto-generated files
+.history/
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VSCode settings
+.vscode/
+
+# SQL-related files
+*.sql
+*.bak
+*.mdf
+*.ldf
+
+# Ubuntu system files
+*.swp
+*~
+.DS_Store
+Thumbs.db
+.desktop
+.directory
+.Trash-*
+.cache/
+
+# Temporary files
+*~
+*.log
+*.bak
+*.swp
+
+# Ignore shell history files
+.bash_history
+.zsh_history
+
+# Ignore environment file
+.env
