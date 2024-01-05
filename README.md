@@ -13,3 +13,7 @@ Some of the key topics covered in this SQL Preparation based on their level of d
 +   Alternative Queries
 
 In this Journey of learning SQL, you will get to know about the  different commands based on their level of difficulty and arrange in different **_Sub-Domains_**
+
+
+##  Basic Select
+We begin our journey from Hacker Rank practice course. In this practice course we learn about Basic Select operations with respective clauses.
