@@ -205,3 +205,25 @@ These are the fundamental operations for selecting data in SQL.
     ```
    </details>
 </details>
+
+
+<details>
+<summary><b>Weather Observation Station 3</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
+   The STATION table is described as follows:
+   <img src="assets/Weather_Observation_Station-1.jpg" alt="STATION Table" style="height:100%; width:60%">
+   where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
