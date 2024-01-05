@@ -137,3 +137,24 @@ These are the fundamental operations for selecting data in SQL.
     ```
    </details>
 </details>
+
+
+<details>
+<summary><b>Japanese Cities' Attributes</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.
+   The CITY table is described as follows:
+   <img src="assets/Revising_the_Select_Query-I.jpg" alt="CITY Table" style="height:100%; width:60%">
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
