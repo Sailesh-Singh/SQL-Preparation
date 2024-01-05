@@ -81,7 +81,6 @@ These are the fundamental operations for selecting data in SQL.
    The CITY table is described as follows:
    <img src="assets/Revising_the_Select_Query-I.jpg" alt="CITY Table" style="height:100%; width:60%">
 
-
    </details>
 + <details>
     <summary><b>Code</b></summary>
@@ -90,6 +89,28 @@ These are the fundamental operations for selecting data in SQL.
     SELECT * 
     FROM CITY 
     WHERE COUNTRYCODE="USA" AND POPULATION>1200000
+    ```
+   </details>
+</details>
+
+
+<details>
+<summary><b>Select All</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Query all columns (attributes) for every row in the CITY table. 
+   The CITY table is described as follows:
+
+   <img src="assets/Revising_the_Select_Query-I.jpg" alt="CITY Table" style="height:100%; width:60%">
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
     ```
    </details>
 </details>
