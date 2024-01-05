@@ -69,3 +69,25 @@ These are the fundamental operations for selecting data in SQL.
     ```
    </details>
 </details>
+
+
+<details>
+<summary><b>Revising the Select Query II</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Query the NAME field for all American cities in the CITY table with populations larger than 120000. The CountryCode for America is USA.
+   The CITY table is described as follows:
+   <img src="assets/Revising_the_Select_Query-I.jpg" alt="CITY Table" style="height:100%; width:60%">
+
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
