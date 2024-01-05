@@ -63,7 +63,9 @@ These are the fundamental operations for selecting data in SQL.
     <summary><b>Code</b></summary>
     
     ```sql
-
+    SELECT * 
+    FROM CITY 
+    WHERE COUNTRYCODE = "USA" AND POPULATION > 100000
     ```
    </details>
 </details>
