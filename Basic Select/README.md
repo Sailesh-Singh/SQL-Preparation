@@ -44,3 +44,5 @@ SELECT * FROM employees WHERE department = 'Sales';
 This query retrieves all columns from the `employees` table where the `department` column equals `'Sales'`.
 
 These are the fundamental operations for selecting data in SQL.
+
+##   Practice Questions
