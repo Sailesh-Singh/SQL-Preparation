@@ -177,7 +177,9 @@ These are the fundamental operations for selecting data in SQL.
     <summary><b>Code</b></summary>
     
     ```sql
-
+    SELECT NAME 
+    FROM CITY 
+    WHERE COUNTRYCODE = "JPN"
     ```
    </details>
 </details>
