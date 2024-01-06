@@ -545,7 +545,9 @@ These are the fundamental operations for selecting data in SQL.
     <summary><b>Code</b></summary>
     
     ```sql
-
+    SELECT NAME 
+    FROM EMPLOYEE 
+    ORDER BY NAME
     ```
    </details>
 </details>
