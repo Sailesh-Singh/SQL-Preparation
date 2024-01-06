@@ -384,7 +384,15 @@ These are the fundamental operations for selecting data in SQL.
     <summary><b>Code</b></summary>
     
     ```sql
-
+    SELECT DISTINCT CITY 
+    FROM STATION 
+    WHERE CITY LIKE('[A,E,I,O,U]%[A,E,I,O,U]')
+    ```
+    or
+    ```sql
+    SELECT DISTINCT CITY 
+    FROM STATION 
+    WHERE CITY REGEXP '^[AEIOUaeiou].*[AEIOUaeiou]$'
     ```
    </details>
 </details>
