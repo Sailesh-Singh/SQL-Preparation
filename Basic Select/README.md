@@ -458,7 +458,6 @@ These are the fundamental operations for selecting data in SQL.
     Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
 
     Input Format
-
     The STATION table is described as follows:
     <img src="assets/Weather_Observation_Station-1.jpg" alt="Table" style="height:100%; width:60%">
     where LAT_N is the northern latitude and LONG_W is the western longitude.
@@ -468,7 +467,9 @@ These are the fundamental operations for selecting data in SQL.
     <summary><b>Code</b></summary>
     
     ```sql
-
+    SELECT DISTINCT CITY 
+    FROM STATION 
+    WHERE CITY NOT LIKE ('[A,E,I,O,U]%[A,E,I,O,U]')
     ```
    </details>
 </details>
