@@ -347,7 +347,20 @@ These are the fundamental operations for selecting data in SQL.
     <summary><b>Code</b></summary>
     
     ```sql
-
+    SELECT DISTINCT CITY FROM STATION 
+    WHERE CITY LIKE '%A' OR CITY LIKE '%E' OR CITY LIKE '%I' OR CITY LIKE '%O' OR CITY LIKE '%U'
+    ```
+    or
+    ```sql
+    SELECT DISTINCT CITY 
+    FROM STATION 
+    WHERE RIGHT(CITY, 1) IN ('a', 'e', 'i', 'o', 'u')
+    ```
+    or
+    ```sql
+    SELECT  DISTINCT CITY 
+    FROM STATION 
+    WHERE CITY LIKE ('%[a,e,i,o,u]')
     ```
    </details>
 </details>
