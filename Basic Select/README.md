@@ -519,7 +519,9 @@ These are the fundamental operations for selecting data in SQL.
     <summary><b>Code</b></summary>
     
     ```sql
- 
+    SELECT NAME FROM STUDENTS 
+    WHERE MARKS>75 
+    ORDER BY RIGHT(NAME,3),ID; 
     ```
    </details>
 </details>
