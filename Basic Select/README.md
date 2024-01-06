@@ -571,7 +571,9 @@ These are the fundamental operations for selecting data in SQL.
     <summary><b>Code</b></summary>
     
     ```sql
-
+    SELECT NAME 
+    FROM EMPLOYEE 
+    WHERE SALARY> 2000 AND MONTHS<10 ORDER BY EMPLOYEE_ID
     ```
    </details>
 </details>
