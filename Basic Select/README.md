@@ -260,7 +260,8 @@ These are the fundamental operations for selecting data in SQL.
 + <details>
     <summary><b>Questions</b></summary>
 
-   Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.The STATION table is described as follows:
+   Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
+   The STATION table is described as follows:
    <img src="assets/Weather_Observation_Station-1.jpg" alt="STATION Table" style="height:100%; width:60%">
    where LAT_N is the northern latitude and LONG_W is the western longitude.
 
