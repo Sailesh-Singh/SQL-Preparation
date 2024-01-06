@@ -499,3 +499,27 @@ These are the fundamental operations for selecting data in SQL.
     ```
    </details>
 </details>
+
+
+<details>
+<summary><b>Higher Than 75 Marks</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+    
+    Query the Name of any student in STUDENTS who scored higher than  Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
+
+    Input Format
+    The STUDENTS table is described as follows:
+    <img src="assets/Higher_Than_75_Marks.png" alt="STUDENTS Table" style="height:100%; width:60%">
+    The Name column only contains uppercase (A-Z) and lowercase (a-z) letters.
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+ 
+    ```
+   </details>
+</details>
