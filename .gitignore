@@ -23,6 +23,9 @@ $RECYCLE.BIN/
 # VSCode settings
 .vscode/
 
+#CSV Files
+*.csv
+
 # SQL-related files
 *.sql
 *.bak
