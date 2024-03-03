@@ -72,3 +72,6 @@ Advanced SELECT operations in SQL involve more complex queries and additional fe
    Provides conditional logic within the SELECT statement.
 
 These advanced SELECT operations provide powerful tools for querying and analyzing data in a relational database.
+
+
+##   Practice Questions
