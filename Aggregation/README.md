@@ -506,7 +506,7 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
    **Input Format**
    The **EMPLOYEES** table is described as follows:
 
-   <img src="" alt="Table" style="height:100%; width:60%">
+   <img src="./assets/employeeTable.png" alt="Table" style="height:100%; width:60%">
 
    </details>
 + <details>
