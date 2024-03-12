@@ -244,3 +244,31 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     ```
    </details>
 </details>
+
+
+<details>
+<summary><b>Weather Observation Station 16</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Query the smallest Northern Latitude (LAT_N) from **STATION** that is greater than **38.7780**. Truncate your answer to 4 decimal places.
+
+   **Input Format**
+
+   The **STATION** table is described as follows:
+
+   <img src="../Basic Select/assets/Weather_Observation_Station-1.jpg" alt="Table" style="height:100%; width:60%">
+
+   where LAT_N is the northern latitude and LONG_W is the western longitude. 
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+
+    ```
+   </details>
+</details>
