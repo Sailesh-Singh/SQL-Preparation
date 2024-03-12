@@ -208,6 +208,7 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT ROUND(MAX(LAT_N), 4)FROM STATION WHERE LAT_N < 137.2345
 
     ```
    </details>
