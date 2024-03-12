@@ -458,6 +458,7 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT SUM(POPULATION) FROM CITY WHERE COUNTRYCODE = 'JPN';
 
     ```
    </details>
