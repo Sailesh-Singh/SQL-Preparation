@@ -367,6 +367,33 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     <summary><b>Code</b></summary>
     
     ```sql
+
+    ```
+   </details>
+</details>
+
+
+<details>
+<summary><b>Weather Observation Station 20</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   A median is defined as a number separating the higher half of a data set from the lower half. Query the median of the Northern Latitudes (LAT_N) from **STATION** and round your answer to 4 decimal places. 
+
+   **Input Format**
+
+   The **STATION** table is described as follows:
+
+   <img src="../Basic Select/assets/Weather_Observation_Station-1.jpg" alt="Table" style="height:100%; width:60%">
+
+   where LAT_N is the northern latitude and LONG_W is the western longitude. 
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
     SELECT ROUND(SQRT(POW(MAX(LAT_N) - MIN(LAT_N),2) + POW(MAX(LONG_W) - MIN(LONG_W),2)),4)
     FROM STATION
 
