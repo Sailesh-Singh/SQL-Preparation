@@ -306,3 +306,37 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     ```
    </details>
 </details>
+
+
+<details>
+<summary><b>Weather Observation Station 18</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Consider **_P1(a,b)_** and **_P2(c,d)_** to be two points on a 2D plane.
+
+    +   *a* happens to equal the minimum value in Northern Latitude (LAT_N in STATION).
+    +   *b* happens to equal the minimum value in Western Longitude (LONG_W in STATION).
+    +   *c*happens to equal the maximum value in Northern Latitude (LAT_N in STATION).
+    +   *d* happens to equal the maximum value in Western Longitude (LONG_W in STATION).
+    Query the Manhattan Distance between points and and round it to a scale of decimal places.
+
+   **Input Format**
+
+   The **STATION** table is described as follows:
+
+   <img src="../Basic Select/assets/Weather_Observation_Station-1.jpg" alt="Table" style="height:100%; width:60%">
+
+   where LAT_N is the northern latitude and LONG_W is the western longitude. 
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+
+    ```
+   </details>
+</details>
