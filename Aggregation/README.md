@@ -394,8 +394,19 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     <summary><b>Code</b></summary>
     
     ```sql
-    SELECT ROUND(SQRT(POW(MAX(LAT_N) - MIN(LAT_N),2) + POW(MAX(LONG_W) - MIN(LONG_W),2)),4)
-    FROM STATION
+    SELECT ROUND(S1.LAT_N, 4) 
+    FROM STATION AS S1 
+    WHERE 
+    (SELECT ROUND(COUNT(S1.ID)/2) - 1 FROM STATION) = 
+    (SELECT COUNT(S2.ID) FROM STATION AS S2 
+    WHERE S2.LAT_N > S1.LAT_N)
+
+    ```
+    **_OR_**
+
+    ```sql
+    SELECT ROUND(MEDIAN(LAT_N), 4) AS MEDIAN_LAT
+    FROM STATION;
 
     ```
    </details>
