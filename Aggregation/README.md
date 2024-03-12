@@ -477,7 +477,8 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
 
    The **CITY** table is described as follows: 
 
-   <img src="./assets/averagePopulation.jpg" alt="Table" style="height:100%; width:60%">
+   <img src="./assets/employeeTable.png" alt="Table" style="height:100%; width:60%">
+   **Note:** Salary is per month. 
 
    </details>
 + <details>
@@ -486,6 +487,32 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     ```sql
     SELECT MAX(POPULATION) - MIN(POPULATION)
     FROM CITY
+
+    ```
+   </details>
+</details>
+
+
+<details>
+<summary><b>The Blunder</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Samantha was tasked with calculating the average monthly salaries for all employees in the **EMPLOYEES** table, but did not realize her keyboard's 0 key was broken until after completing the calculation. She wants your help finding the difference between her miscalculation (using salaries with any zeros removed), and the actual average salary.
+
+   Write a query calculating the amount of error (i.e.: **_actual - miscalculated_** average monthly salaries), and round it up to the next integer.
+
+   **Input Format**
+   The **EMPLOYEES** table is described as follows:
+
+   <img src="" alt="Table" style="height:100%; width:60%">
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
 
     ```
    </details>
