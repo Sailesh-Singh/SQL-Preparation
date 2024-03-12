@@ -411,3 +411,28 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     ```
    </details>
 </details>
+
+
+<details>
+<summary><b>Average Population</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Query the average population for all cities in **CITY**, rounded down to the nearest integer.
+
+    **Input Format**
+
+    The **CITY** table is described as follows: 
+
+   <img src="./assets/averagePopulation.jpg" alt="Table" style="height:100%; width:60%">
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
