@@ -205,12 +205,20 @@ These advanced SELECT operations provide powerful tools for querying and analyzi
   + Root: If node is root node.
   + Leaf: If node is leaf node.
   + Inner: If node is neither root nor leaf node.
-  
+
    </details>
 + <details>
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT N,
+       CASE
+           WHEN P IS NULL THEN 'Root'
+           WHEN N IN (SELECT P FROM BST WHERE P IS NOT NULL) THEN 'Inner'
+           ELSE 'Leaf'
+       END AS NodeType
+  FROM BST
+  ORDER BY N;
 
     ```
    </details>
