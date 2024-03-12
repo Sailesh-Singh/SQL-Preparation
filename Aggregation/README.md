@@ -463,3 +463,28 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     ```
    </details>
 </details>
+
+
+<details>
+<summary><b>Population Density Difference</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Query the difference between the maximum and minimum populations in **CITY**.
+
+   **Input Format**
+
+   The **CITY** table is described as follows: 
+
+   <img src="./assets/averagePopulation.jpg" alt="Table" style="height:100%; width:60%">
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
