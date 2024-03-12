@@ -131,3 +131,30 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     ```
    </details>
 </details>
+
+<details>
+<summary><b>Weather Observation Station 2</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Query the following two values from the **STATION** table:
+    1. The sum of all values in LAT_N rounded to a scale of  decimal places.
+    2. The sum of all values in LONG_W rounded to a scale of decimal places.
+
+    **Input Format**
+    The **STATION** table is described as follows:
+
+   <img src="../Basic Select/assets/Weather_Observation_Station-1.jpg" alt="Table" style="height:100%; width:60%">
+
+   where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
