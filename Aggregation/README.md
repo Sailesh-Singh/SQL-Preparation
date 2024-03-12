@@ -513,6 +513,8 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT CEIL(AVG(SALARY) - AVG(CAST(REPLACE(SALARY, '0', '') AS DECIMAL)))
+    FROM EMPLOYEES
 
     ```
    </details>
