@@ -297,6 +297,11 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT ROUND(LONG_W, 4) 
+    FROM STATION
+    WHERE LAT_N > 38.7780
+    ORDER BY LAT_N
+    LIMIT 1
 
     ```
    </details>
