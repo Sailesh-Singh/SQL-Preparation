@@ -188,3 +188,30 @@ These advanced SELECT operations provide powerful tools for querying and analyzi
     ```
    </details>
 </details>
+
+
+<details>
+<summary><b>Binary Tree Nodes</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   You are given a table, BST, containing two columns: N and P, where N represents the value of a node in Binary Tree, and P is the parent of N.
+
+   <img src="assets/Binary_Tree-Nodes.png" alt="Table" style="height:100%; width:60%">
+
+   Write a query to find the node type of Binary Tree ordered by the value of the node. Output one of the following for each node:
+
+  + Root: If node is root node.
+  + Leaf: If node is leaf node.
+  + Inner: If node is neither root nor leaf node.
+  
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
