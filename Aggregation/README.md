@@ -100,3 +100,29 @@ FROM employees;
 Aggregation operations in SQL are crucial for data analysis, reporting, and decision-making tasks, enabling users to derive meaningful insights from large datasets.
 
 ##   Practice Questions
+
+<details>
+<summary><b>Top Earners</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+    We define an employee's total earnings to be their monthly *salary x months* worked, and the maximum total earnings to be the maximum total earnings for any employee in the **Employee** table. Write a query to find the maximum total earnings for all employees as well as the total number of employees who have maximum total earnings. Then print these values as 2 space-separated integers.
+
+    **Input Format**
+
+    The **Employee** table containing employee data for a company is described as follows: 
+
+   <img src="assets/topEarners.png" alt="Table" style="height:100%; width:60%">
+
+   where employee_id is an employee's ID number, name is their name, months is the total number of months they've been working for the company, and salary is the their monthly salary.
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
