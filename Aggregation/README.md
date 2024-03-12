@@ -154,6 +154,7 @@ Aggregation operations in SQL are crucial for data analysis, reporting, and deci
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT ROUND(SUM(lat_n),2), ROUND(SUM(long_w),2) FROM STATION
 
     ```
    </details>
