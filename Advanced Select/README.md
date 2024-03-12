@@ -153,3 +153,22 @@ These advanced SELECT operations provide powerful tools for querying and analyzi
     ```
    </details>
 </details>
+
+<details>
+<summary><b>Occupations</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+    Pivot the Occupation column in **OCCUPATIONS** so that each Name is sorted alphabetically and displayed underneath its corresponding Occupation. The output column headers should be Doctor, Professor, Singer, and Actor, respectively.
+
+    **Note:** Print **NULL** when there are no more names corresponding to an occupation.
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
