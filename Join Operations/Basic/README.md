@@ -206,13 +206,13 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
        <img src="./assets/hackerFormat.png" alt="Table" style="height:100%; width:60%">
 
     + Difficulty: The difficult_level is the level of difficulty of the challenge, and score is the score of the challenge for the difficulty level. 
-       <img src="./assets/difficultyFormat.png" alt="Table" style="height:100%; width:60%">
+    <img src="./assets/difficultyFormat.png" alt="Table" style="height:100%; width:60%">
 
     + Challenges: The challenge_id is the id of the challenge, the hacker_id is the id of the hacker who created the challenge, and difficulty_level is the level of difficulty of the challenge.
-       <img src="./assets/challengesFormat.png" alt="Table" style="height:100%; width:60%">
+    <img src="./assets/challengesFormat.png" alt="Table" style="height:100%; width:60%">
 
     + Submissions: The submission_id is the id of the submission, hacker_id is the id of the hacker who made the submission, challenge_id is the id of the challenge that the submission belongs to, and score is the score of the submission. 
-       <img src="./assets/submissionsFormat.png" alt="Table" style="height:100%; width:60%">
+    <img src="./assets/submissionsFormat.png" alt="Table" style="height:100%; width:60%">
 
 
    </details>
@@ -243,16 +243,17 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
    Harry Potter and his friends are at Ollivander's with Ron, finally replacing Charlie's old broken wand.
 
    Hermione decides the best way to choose is by determining the minimum number of gold galleons needed to buy each non-evil wand of high power and age. Write a query to print the id, age, coins_needed, and power of the wands that Ron's interested in, sorted in order of descending power. If more than one wand has same power, sort the result in order of descending age.
+
    ---
    **Input Format**
 
    Wands: The id is the id of the wand, code is the code of the wand, coins_needed is the total number of gold galleons needed to buy the wand, and power denotes the quality of the wand (the higher the power, the better the wand is).
 
-      <img src="./assets/wands.png" alt="Table" style="height:100%; width:60%">
+    <img src="./assets/wands.png" alt="Table" style="height:100%; width:60%">
 
-   Wands_Property: The code is the code of the wand, age is the age of the wand, and is_evil denotes whether the wand is good for the dark arts. If the value of is_evil is 0, it means that the wand is not evil. The mapping between code and age is one-one, meaning that if there are two pairs, **_(code1,  age1)_** and **_(code2,  age2)_**, then **_code1 != code2_**and **_age1 != age2_**.
+   Wands_Property: The code is the code of the wand, age is the age of the wand, and is_evil denotes whether the wand is good for the dark arts. If the value of is_evil is 0, it means that the wand is not evil. The mapping between code and age is one-one, meaning that if there are two pairs, **_(code1,  age1)_** and **_(code2,  age2)_**, then **_code1 &ne; code2_**and **_age1 &ne; age2_**.
 
-      <img src="./assets/wandsProperty.png" alt="Table" style="height:100%; width:60%">
+    <img src="./assets/wandsProperty.png" alt="Table" style="height:100%; width:60%">
 
 
    </details>
@@ -269,6 +270,36 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
     ) t1 JOIN wands t2 ON t1.code = t2.code AND t1.min_coins = t2.coins_needed
 
     ORDER BY t1.power DESC, t1.age DESC;
+
+    ```
+   </details>
+</details>
+
+
+<details>
+<summary><b>Challenges</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Julia asked her students to create some coding challenges. Write a query to print the hacker_id, name, and the total number of challenges created by each student. Sort your results by the total number of challenges in descending order. If more than one student created the same number of challenges, then sort the result by hacker_id. If more than one student created the same number of challenges and the count is less than the maximum number of challenges created, then exclude those students from the result.
+
+   **Input Format**
+
+    The following tables contain challenge data:
+    Hackers: The hacker_id is the id of the hacker, and name is the name of the hacker. 
+
+   <img src="./assets/hackersChallenges.png" alt="Table" style="height:100%; width:60%">
+
+   Challenges: The challenge_id is the id of the challenge, and hacker_id is the id of the student who created the challenge.
+
+   <img src="./assets/challengesChallenges.png" alt="Table" style="height:100%; width:60%">
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
 
     ```
    </details>
