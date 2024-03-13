@@ -11,7 +11,7 @@ Join operations in SQL are used to combine rows from two or more tables based on
 
 4. **FULL JOIN**: Returns all rows when there is a match in one of the tables.
 
-[Click to learn more ...](./Basic/README.md)
+[Click to learn](./Basic/README.md) for more visit [HackerRank](https://www.hackerrank.com/domains/sql?filters%5Bskills%5D%5B%5D=SQL%20%28Basic%29&filters%5Bskills%5D%5B%5D=SQL%20%28Intermediate%29&filters%5Bskills%5D%5B%5D=SQL%20%28Advanced%29&filters%5Bdifficulty%5D%5B%5D=easy&filters%5Bdifficulty%5D%5B%5D=medium&filters%5Bdifficulty%5D%5B%5D=hard&filters%5Bsubdomains%5D%5B%5D=join&badge_type=sql)
 
 ## [Advanced Joins](./Advanced/README.md)
 
@@ -23,4 +23,4 @@ Join operations in SQL are used to combine rows from two or more tables based on
 
 4. **CROSS APPLY and OUTER APPLY** (SQL Server): Applies a table-valued function to each row of the outer table expression.
 
-[Click to learn more ...](./Advanced/README.md)
+[Click to learn more](./Advanced/README.md) for more visit [HackerRank](https://www.hackerrank.com/domains/sql?filters%5Bskills%5D%5B%5D=SQL%20%28Basic%29&filters%5Bskills%5D%5B%5D=SQL%20%28Intermediate%29&filters%5Bskills%5D%5B%5D=SQL%20%28Advanced%29&filters%5Bdifficulty%5D%5B%5D=easy&filters%5Bdifficulty%5D%5B%5D=medium&filters%5Bdifficulty%5D%5B%5D=hard&filters%5Bsubdomains%5D%5B%5D=advanced-join&badge_type=sql)
