@@ -292,6 +292,35 @@ Advanced join operations in SQL provide powerful capabilities for querying and a
     <summary><b>Code</b></summary>
     
     ```sql
+    WITH a as(
+    SELECT DISTINCT submission_date, hacker_id, DENSE_RANK() OVER(PARTITION BY hacker_id ORDER BY submission_date) r
+    FROM SUBMISSIONS
+    ),
+        
+    b as (
+        SELECT submission_date,SUM(CASE WHEN DATEDIFF(day,'2016/03/01', submission_date) = (r-1) THEN 1 ELSE 0 END)total
+        FROM A
+        WHERE hacker_id IN(SELECT hacker_id
+                        FROM a
+                        WHERE submission_date ='2016-03-01' AND r=1)
+                        GROUP BY submission_date
+        ),
+        
+    c AS(
+        SELECT submission_date, hacker_id, COUNT(*) r
+        FROM Submissions
+        GROUP BY submission_date, hacker_id
+        ),
+
+    d AS(
+        SELECT submission_date, hacker_id, ROW_NUMBER() OVER(PARTITION BY submission_date ORDER BY r DESC, hacker_id)n
+        FROM c
+        )
+    SELECT b.submission_date, b.total,d.hacker_id, h.name
+    FROM b
+    JOIN d ON b.submission_date = d.submission_date
+    JOIN hackers h ON d.hacker_id = h.hacker_id
+    WHERE d.n = 1
 
     ```
    </details>
