@@ -170,3 +170,27 @@ These alternate queries in SQL provide different ways to achieve the same result
     ```
    </details>
 </details>
+
+<details>
+<summary><b>Print Prime Numbers</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Write a query to print all prime numbers less than or equal to 1000. Print your result on a single line, and use the ampersand (&) character as your separator (instead of a space).
+
+   For example, the output for all prime numbers <= 10 would be:
+   
+   ```
+   2&3&5&7
+   ```
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
