@@ -158,6 +158,14 @@ These alternate queries in SQL provide different ways to achieve the same result
     <summary><b>Code</b></summary>
     
     ```sql
+    WITH RECURSIVE asterisks AS
+        (SELECT cast('*' AS char(39)) AS STR
+        UNION ALL SELECT concat(STR, ' *') AS STR
+        FROM asterisks
+        LIMIT 20)
+    SELECT STR
+    FROM asterisks
+    ORDER BY STR;
 
     ```
    </details>
