@@ -1,4 +1,4 @@
-#   Alternate Queries
+#   Alternative Queries
 Alternate Queries in SQL, also known as alternative or optimized queries, are SQL statements that achieve the same result as another query but may differ in syntax, performance, or readability. These queries are often used to provide different perspectives or to optimize query execution. Below are some examples of alternate queries:
 
 ### 1. Using JOIN vs. Subquery
@@ -99,3 +99,31 @@ WHERE NOT EXISTS (SELECT 1 FROM table2 t2 WHERE t1.id = t2.id);
 ```
 
 These alternate queries in SQL provide different ways to achieve the same result, allowing for flexibility, optimization, and better readability in database queries. Choosing the appropriate query depends on factors such as performance considerations, database schema, and personal preference.
+
+##  Practice Questions
+
+<details>
+<summary><b>Draw The Triangle 1</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
+    ```
+    * * * * * 
+    * * * * 
+    * * * 
+    * * 
+    *
+    ```
+    Write a query to print the pattern P(20).
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
