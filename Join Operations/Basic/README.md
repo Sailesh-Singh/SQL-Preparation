@@ -172,6 +172,18 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT 
+    CASE 
+        WHEN G.GRADE >=8 THEN S.NAME
+        ELSE NULL
+    END AS NAME, G.GRADE, S.MARKS
+    FROM STUDENTS S
+    JOIN GRADES G ON S.MARKS BETWEEN G.MIN_MARK AND G.MAX_MARK
+    WHERE G.GRADE IS NOT NULL
+    ORDER BY
+        G.GRADE DESC,
+        NAME ASC,
+        S.MARKS ASC;
 
     ```
    </details>
