@@ -183,6 +183,18 @@ Advanced join operations in SQL provide powerful capabilities for querying and a
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT f1.x,
+        f1.y
+    FROM   functions AS f1
+        INNER JOIN functions AS f2
+                ON f1.x = f2.y
+                    AND f1.y = f2.x
+    GROUP  BY f1.x,
+            f1.y
+    HAVING f1.x < f1.y
+            OR f1.x = f1.y
+            AND Count(*) > 1
+    ORDER  BY f1.x; 
 
     ```
    </details>
