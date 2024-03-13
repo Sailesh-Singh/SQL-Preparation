@@ -190,6 +190,20 @@ These alternate queries in SQL provide different ways to achieve the same result
     <summary><b>Code</b></summary>
     
     ```sql
+    WITH RECURSIVE ALL_NUM AS(
+    SELECT 1 AS N
+    UNION ALL
+    SELECT N+1
+    FROM ALL_NUM
+    WHERE N<=999
+    )
+    SELECT GROUP_CONCAT(N1.N ORDER BY N1.N SEPARATOR '&')
+    FROM ALL_NUM AS N1 LEFT JOIN ALL_NUM AS N2 
+    ON N1.N <> N2.N 
+    AND N2.N <> 1 
+    AND N1.N%N2.N = 0 
+    WHERE N2.N IS NULL AND N1.N <> 1
+    ORDER BY 1
 
     ```
    </details>
