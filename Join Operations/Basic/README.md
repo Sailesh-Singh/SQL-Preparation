@@ -385,6 +385,10 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT SUM(CITY.POPULATION)
+    FROM CITY
+    JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
+    WHERE COUNTRY.CONTINENT = 'ASIA';
 
     ```
    </details>
