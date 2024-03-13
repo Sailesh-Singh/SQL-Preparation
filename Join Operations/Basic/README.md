@@ -106,6 +106,10 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT CITY.NAME
+    FROM CITY
+    JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
+    WHERE COUNTRY.CONTINENT = 'Africa';
 
     ```
    </details>
