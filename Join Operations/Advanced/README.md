@@ -112,6 +112,21 @@ Advanced join operations in SQL provide powerful capabilities for querying and a
     <summary><b>Code</b></summary>
     
     ```sql
+    WITH A AS (
+    SELECT Start_Date, ROW_NUMBER() OVER () AS rw
+    FROM Projects
+    WHERE Start_date NOT IN (SELECT End_Date FROM Projects)
+    ),
+    B AS (
+        SELECT End_Date, ROW_NUMBER() OVER () AS rw
+        FROM Projects
+        WHERE End_date NOT IN (SELECT Start_Date FROM Projects)
+    )
+
+    SELECT A.Start_Date, B.End_Date
+    FROM A
+    INNER JOIN B ON A.rw = B.rw
+    ORDER BY DATEDIFF(B.End_Date, A.Start_Date), A.Start_Date;
 
     ```
    </details>
