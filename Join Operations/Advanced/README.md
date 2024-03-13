@@ -235,6 +235,34 @@ Advanced join operations in SQL provide powerful capabilities for querying and a
     <summary><b>Code</b></summary>
     
     ```sql
+    WITH sum_view_stats AS (
+    SELECT challenge_id, SUM(total_views) AS sum_views, SUM(total_unique_views) AS sum_unique_views
+    FROM view_stats
+    GROUP BY challenge_id
+    ),
+    sum_submission AS (
+        SELECT challenge_id, SUM(total_submissions) AS sum_submissions, SUM(total_accepted_submissions) AS sum_accepted_submissions
+        FROM submission_stats
+        GROUP BY challenge_id
+    )
+
+    SELECT c.contest_id, hacker_id, name,
+        SUM(ss.sum_submissions) AS total_submissions,
+        SUM(ss.sum_accepted_submissions) AS total_accepted_submissions,
+        SUM(svs.sum_views) AS total_views,
+        SUM(svs.sum_unique_views) AS total_unique_views
+    FROM contests c
+    LEFT JOIN colleges ON c.contest_id = colleges.contest_id
+    LEFT JOIN challenges ch ON colleges.college_id = ch.college_id
+    LEFT JOIN sum_view_stats svs ON ch.challenge_id = svs.challenge_id
+    LEFT JOIN sum_submission ss ON ch.challenge_id = ss.challenge_id 
+    GROUP BY c.contest_id, hacker_id, name
+    HAVING
+        SUM(ss.sum_submissions) +
+        SUM(ss.sum_accepted_submissions) +
+        SUM(svs.sum_views) +
+        SUM(svs.sum_unique_views) <> 0
+    ORDER BY c.contest_id;
 
     ```
    </details>
