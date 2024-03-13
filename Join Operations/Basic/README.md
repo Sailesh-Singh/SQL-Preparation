@@ -81,3 +81,32 @@ SELECT orders.order_id, customers.customer_name
 FROM orders
 FULL JOIN customers ON orders.customer_id = customers.customer_id;
 ```
+
+##   Practice Questions
+
+<details>
+<summary><b>African Cities</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Given the **CITY** and **COUNTRY** tables, query the names of all cities where the **CONTINENT** is 'Africa'.
+
+   **Note:** CITY.CountryCode and COUNTRY.Code are matching key columns.
+
+   **Input Format**
+
+   The **CITY** and **COUNTRY** tables are described as follows: 
+
+   <img src="./assets/CityTable.jpg" alt="Table" style="height:100%; width:60%">
+   <img src="./assets/CountryTable.jpg" alt="Table" style="height:100%; width:60%">
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
