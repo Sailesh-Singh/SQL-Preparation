@@ -248,11 +248,11 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
 
    Wands: The id is the id of the wand, code is the code of the wand, coins_needed is the total number of gold galleons needed to buy the wand, and power denotes the quality of the wand (the higher the power, the better the wand is).
 
-      <img src="" alt="Table" style="height:100%; width:60%">
+      <img src="./assets/wands.png" alt="Table" style="height:100%; width:60%">
 
    Wands_Property: The code is the code of the wand, age is the age of the wand, and is_evil denotes whether the wand is good for the dark arts. If the value of is_evil is 0, it means that the wand is not evil. The mapping between code and age is one-one, meaning that if there are two pairs, **_(code1,  age1)_** and **_(code2,  age2)_**, then **_code1 != code2_**and **_age1 != age2_**.
 
-      <img src="" alt="Table" style="height:100%; width:60%">
+      <img src="./assets/wandsProperty.png" alt="Table" style="height:100%; width:60%">
 
 
    </details>
@@ -260,6 +260,15 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT t2.id, t1.age, t2.coins_needed, t1.power
+    FROM
+    (SELECT MIN(coins_needed) AS min_coins, age, power, code
+        FROM wands NATURAL JOIN wands_property
+        WHERE is_evil = 0
+        GROUP BY age, power, code
+    ) t1 JOIN wands t2 ON t1.code = t2.code AND t1.min_coins = t2.coins_needed
+
+    ORDER BY t1.power DESC, t1.age DESC;
 
     ```
    </details>
