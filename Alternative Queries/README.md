@@ -135,3 +135,30 @@ These alternate queries in SQL provide different ways to achieve the same result
     ```
    </details>
 </details>
+
+
+<details>
+<summary><b>Draw The Triangle 2</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
+    ```
+    * 
+    * * 
+    * * * 
+    * * * * 
+    * * * * *
+    ```
+    Write a query to print the pattern P(20).
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
