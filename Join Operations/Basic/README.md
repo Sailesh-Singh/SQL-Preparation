@@ -300,6 +300,23 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
     <summary><b>Code</b></summary>
     
     ```sql
+    WITH CTE AS (
+    SELECT 
+        h.hacker_id AS hacker_id,
+        name,
+        COUNT(ch.challenge_id) AS challenges_count,
+        COUNT(COUNT(ch.challenge_id)) OVER (PARTITION BY COUNT(ch.challenge_id)) AS same_results
+    FROM hackers h
+    JOIN challenges ch ON h.hacker_id = ch.hacker_id
+    GROUP BY h.hacker_id, name
+    )
+
+    SELECT hacker_id, name, challenges_count
+    FROM CTE    
+    WHERE 
+        challenges_count = (SELECT MAX(challenges_count) FROM CTE) OR same_results = 1
+    ORDER BY 
+        challenges_count DESC, hacker_id;
 
     ```
    </details>
