@@ -129,7 +129,7 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
    **Input Format**
 
    The **CITY** and **COUNTRY** tables are described as follows:
-    
+
    <img src="./assets/CityTable.jpg" alt="Table" style="height:100%; width:60%">
    <img src="./assets/CountryTable.jpg" alt="Table" style="height:100%; width:60%">
 
@@ -139,6 +139,10 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT COUNTRY.CONTINENT, FLOOR(AVG(CITY.Population))
+    FROM CITY
+    JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
+    GROUP BY COUNTRY.CONTINENT
 
     ```
    </details>
