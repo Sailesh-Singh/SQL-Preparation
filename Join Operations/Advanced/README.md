@@ -150,6 +150,13 @@ Advanced join operations in SQL provide powerful capabilities for querying and a
     <summary><b>Code</b></summary>
     
     ```sql
+    SELECT S.Name
+    FROM Students S
+    JOIN Friends F ON S.ID = F.ID
+    JOIN Packages PS ON F.Friend_ID = PS.ID
+    JOIN Packages PS2 ON S.ID = PS2.ID
+    WHERE PS.Salary > PS2.Salary
+    ORDER BY PS.Salary;
 
     ```
    </details>
