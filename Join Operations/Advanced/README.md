@@ -161,3 +161,29 @@ Advanced join operations in SQL provide powerful capabilities for querying and a
     ```
    </details>
 </details>
+
+
+
+<details>
+<summary><b>Symmetric Pairs</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   You are given a table, Functions, containing two columns: X and Y.
+   <img src="./assets/SymmetricPairs.png" alt="Table" style="height:100%; width:60%">
+
+   Two pairs (X1, Y1) and (X2, Y2) are said to be symmetric pairs if X1 = Y2 and X2 = Y1.
+
+   Write a query to output all such symmetric pairs in ascending order by the value of X. List the rows such that X1 ≤ Y1. 
+
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
+
+    ```
+   </details>
+</details>
