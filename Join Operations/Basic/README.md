@@ -199,6 +199,7 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
    Julia just finished conducting a coding contest, and she needs your help assembling the leaderboard! Write a query to print the respective hacker_id and name of hackers who achieved full scores for more than one challenge. Order your output in descending order by the total number of challenges in which the hacker earned a full score. If more than one hacker received full scores in same number of challenges, then sort them by ascending hacker_id.
 
    ---
+   **Input Format**
    The following tables contain contest data:
 
     + Hackers: The hacker_id is the id of the hacker, and name is the name of the hacker.
@@ -227,6 +228,38 @@ FULL JOIN customers ON orders.customer_id = customers.customer_id;
     GROUP BY S.HACKER_ID, H.NAME
     HAVING COUNT(S.HACKER_ID) > 1
     ORDER BY COUNT(S.HACKER_ID) DESC, S.HACKER_ID ASC
+
+    ```
+   </details>
+</details>
+
+
+<details>
+<summary><b>Ollivander's Inventory</b></summary>
+
++ <details>
+    <summary><b>Questions</b></summary>
+
+   Harry Potter and his friends are at Ollivander's with Ron, finally replacing Charlie's old broken wand.
+
+   Hermione decides the best way to choose is by determining the minimum number of gold galleons needed to buy each non-evil wand of high power and age. Write a query to print the id, age, coins_needed, and power of the wands that Ron's interested in, sorted in order of descending power. If more than one wand has same power, sort the result in order of descending age.
+   ---
+   **Input Format**
+
+   Wands: The id is the id of the wand, code is the code of the wand, coins_needed is the total number of gold galleons needed to buy the wand, and power denotes the quality of the wand (the higher the power, the better the wand is).
+
+      <img src="" alt="Table" style="height:100%; width:60%">
+
+   Wands_Property: The code is the code of the wand, age is the age of the wand, and is_evil denotes whether the wand is good for the dark arts. If the value of is_evil is 0, it means that the wand is not evil. The mapping between code and age is one-one, meaning that if there are two pairs, **_(code1,  age1)_** and **_(code2,  age2)_**, then **_code1 != code2_**and **_age1 != age2_**.
+
+      <img src="" alt="Table" style="height:100%; width:60%">
+
+
+   </details>
++ <details>
+    <summary><b>Code</b></summary>
+    
+    ```sql
 
     ```
    </details>
