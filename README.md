@@ -26,3 +26,6 @@ We begin our journey from Hacker Rank practice course. Click [Aggregation](https
 
 ##  <a href="./Join Operations/README.md">Join Operations</a>
 We begin our journey from Hacker Rank practice course. Basic Join and Advanced Join to begin learning. In this practice course we learn about Join operations with respective clauses.<a href="./Join Operations/README.md"><i>Learn more..</i></a>
+
+##  <a href="./Alternative Queries/README.md">Alternative Queries</a>
+We begin our journey from Hacker Rank practice course. Click [Alternative Queries](https://www.hackerrank.com/domains/sql?filters%5Bsubdomains%5D%5B%5D=alternative-queries&filters%5Bdifficulty%5D%5B%5D=hard&filters%5Bdifficulty%5D%5B%5D=medium&filters%5Bdifficulty%5D%5B%5D=easy&filters%5Bskills%5D%5B%5D=SQL%20%28Advanced%29&filters%5Bskills%5D%5B%5D=SQL%20%28Intermediate%29&filters%5Bskills%5D%5B%5D=SQL%20%28Basic%29) to begin learning. In this practice course we learn about Alternative queries with respective clauses.<a href="./Alternative Queries/README.md"><i>Learn more..</i></a>
